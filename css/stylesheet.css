@@ -1,0 +1,700 @@
+body{
+	background-color: white;
+	font-family: 'Zilla Slab', serif;
+	color: #222;
+}
+
+.container{
+	padding: 0px 12px 8px;
+	width: 100%;
+}
+
+.layout-column{
+	display: flex;
+	flex-flow: column;
+	flex-wrap: nowrap;
+}
+
+.layout-row{
+	display: flex;
+	flex-flow: row;
+	flex-wrap: wrap;
+}
+
+a{
+	text-decoration: none;
+	color: #222;
+}
+
+a:hover{
+	text-decoration: none;
+	color: #222;
+}
+
+h1 {
+	text-transform: uppercase;
+}
+
+.cart-button{
+	border-radius: 20px;
+	border: 1px solid #eaeaea;
+	text-decoration: none;
+	background-color: white;
+	max-width: 150px;
+}
+
+.left{
+	padding: 5px 7px 5px 15px;
+
+}
+
+.left img{
+	height: 18px;
+	margin-top: -4px;
+	
+}
+
+.right{
+	padding: 5px 15px 5px 7px;
+	text-transform: uppercase;
+	font-weight: 600;
+	border-left: 1px solid #eaeaea;
+}
+
+/* NAVIGATION */
+#navigation{
+	width: inherit;
+	height: auto;
+	position: fixed;
+	background-color: white;
+	z-index: 999999;
+}
+
+.wrapper{
+	content: "";
+	height: 20px;
+	width: 100%;
+	background-color: rgb(241, 241, 241);
+}
+
+.nav-left{
+	width: 50%;
+}
+
+.nav-left img{
+	height: 50px;
+	width: 80px;
+	background-color: black;
+}
+
+.nav-right{
+	justify-content: flex-end;
+	align-items: center;
+	width: 50%;
+	padding-right: 28px;
+}
+
+.nav-button{
+	margin-right: 20px;
+	text-transform: uppercase;
+}
+
+.nav-cart{
+	background-image: url(https://www.beoplay.com/~/media/d6ba14ceca994881824d429220c28695.ashx);
+	background-repeat: no-repeat;
+	opacity: .5;
+	border-radius: 20px;
+	border: 1px solid #eaeaea;
+	background-position: 10px 8px;
+	padding: 8px 10px 6px 32px;
+	text-decoration: none;
+}
+
+.nav-right span{
+	background-color: black;
+	margin-bottom: 3px;
+	height: 3px;
+	width: 20px;
+	display: block;
+}
+
+@media only screen and (max-width: 768px){
+	.nav-middle{
+		display: none;
+		position: absolute;
+		top: 40px;
+		right: 0;
+		background-color: white;
+		width: 150px;
+		padding-left: 20px;
+	}
+
+
+
+	.nav-middle-open a{
+		padding: 15px 15px 15px 0px;
+		border-bottom: 1px solid gray;
+		display: block;
+		font-size: 20px;
+		font-weight: 300;
+	}
+
+	.nav-middle-open{
+		display: block;
+		position: absolute;
+		top: 40px;
+		right: 0;
+		background-color: white;
+		width: 200px;
+		padding-left: 20px;
+		height: 100%;
+	}
+}
+
+@media only screen and (min-width: 768px){
+	.nav-burger{
+		display: none;
+	}
+
+	.nav-button{
+		margin-right: -10px;
+	}
+
+	.nav-left{
+		width: 10%;
+	}
+
+	.nav-right{
+		width: 15%;
+	}
+
+	.nav-middle{
+		width: 75%;
+		display: flex;
+		flex-flow: row;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.nav-middle a{
+		margin-left: 12px;
+		opacity: 0.7;
+		font-size: 20px;
+	}
+	}
+}
+
+/* HEADER */
+#header{
+	width: 100%;
+	height: 100%;
+	color: white;
+	text-align: center;
+	padding-top: 50px;
+}
+
+.header-container{
+	background-image: url(https://www.beoplay.com/~/media/Frontpage/Hero/H9/H9_hero_m.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 100px 12px;
+}
+
+.header-content{
+	justify-content: center;
+	align-items: center;
+}
+
+.header-content h1{
+	margin-top: 0px;
+}
+
+.header-content h3{
+	margin-top: 10px;
+	margin-bottom: 20px;
+	font-weight: 300;
+}
+
+.cart-content{
+	float: left;
+}
+
+.header-cart1{
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.header-cart2{
+ 	display: inline-block;
+}
+
+@media only screen and (min-width: 768px){
+	.header-container{
+		background-image: url(https://www.beoplay.com/~/media/Frontpage/Hero/H9/H9_hero_m.jpg);
+		background-position: left;
+		background-image: 100% 100%;
+		background-size: cover;
+		padding: 200px 20px 120px;
+	}
+}
+
+/* PRODUCT */
+#product{
+	background-color: rgb(241, 241, 241);
+}
+
+.product-container{
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.box {
+	margin-bottom: 20px;
+	background-color: white;
+	width: 300px;
+}
+
+.des {
+	padding: 0 20px 0px;
+}
+
+.des h2{
+	font-weight: 300;
+	position: absolute;
+	margin-top: -300px;
+	color: white;
+
+}
+
+.des h4{
+	position: absolute;
+	margin-top: -260px;
+	margin-left: -20px;
+	background-color: white;
+	text-indent: 20px;
+	padding: 5px 10px 5px 0;
+	border-top-right-radius: 40px;
+	border-bottom-right-radius: 40px;
+	text-transform: uppercase;
+	font-weight: 600;
+	opacity: .8;
+}
+
+.des h5{
+	text-transform: uppercase;
+	font-weight: 600;
+	padding-top: 7px;
+}
+
+.des p{
+	margin-bottom: 0px;
+}
+
+.price-info{
+	width: 100%;
+	align-items: center;
+	padding-bottom: 12px;
+	justify-content: space-between;
+}
+
+.box .price-info p{
+	width: 58%;
+}
+
+.box .price-info a{
+	width: 38%;
+}
+
+.box .price-info .left{
+	padding: 5px 7px 5px 10px;
+}
+
+.box .price-info .right {
+	padding: 5px 10px 5px 7px;
+}
+
+.big-box {
+	background-color: white;
+	margin-bottom: 20px;
+	width: 630px;
+}
+
+.big-box .price-info p{
+	width: 80%;
+}
+
+.big-box .price-info a{
+	width: 20%;
+}
+
+.small-box{
+	width: 120px;
+	background-color: white;
+	margin-bottom: 20px !important;
+	padding-bottom: 0px !important;
+}
+
+.small-box img{
+	width: 120px;
+	size: cover;
+	background-color: rgb(233, 234, 226);
+}
+
+.small-box h2{
+	margin-top: -110px;
+}
+
+.small-box h4{
+	position: absolute;
+	margin-top: -70px;
+	margin-left: -20px;
+	background-color: white;
+	text-indent: 20px;
+	padding: 5px 10px 5px 0;
+	border-top-right-radius: 40px;
+	border-bottom-right-radius: 40px;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 12px;
+	opacity: .8;
+}
+
+.p3a {
+	margin-right: 10px;
+}
+
+.p3b {
+	margin-left: 10px;
+}
+
+
+@media screen and (max-width: 640px){
+	.p0, .p2b, .p3aa, .p3ab, .p4b {
+	display: none;
+	}
+}
+
+@media screen and (min-width: 640px) {
+	.box {
+		margin-right: 20px;
+	}
+
+	.p2a, .p3a, .p3b, .p4a {
+		display: none;
+	}
+
+}
+
+@media screen and (min-width: 1200px){
+	.p0{order: 1;}
+	.p2b{order: 2;}
+	.p1{order: 3;}
+	.p3aa{order: 4;}
+	.p3ab{order: 5;}
+	.p4b{order: 6;}
+}
+
+/* BUTTOn ALL */
+#button-all{
+	background-color: rgb(241, 241, 241);
+	padding: 10px 0px 20px;
+}
+
+.button-container{
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+/* ABOUT */
+#about {
+	background-color: rgb(241, 241, 241);
+	padding: 30px;
+
+}
+
+.about-content{
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+#about h1, #food h1{
+	margin-top: 0px;
+	text-align: center;
+	font-family: 'Abril Fatface', cursive;
+	padding-bottom: 30px;
+	font-size: 60px;
+}
+
+.ab-button{
+	color: white;
+	border-radius: 40px;
+	border: 0px solid rgba(190, 190, 190, 0.5);
+	background-color: #666;
+	text-transform: uppercase;
+	font-weight: bold;
+	max-width: 300px;
+	padding: 5px 12px;
+	text-align: center;
+}
+
+.bigger-box {
+	margin-bottom: 20px;
+	background-color: white;
+	width: 630px;
+	margin-right: 20px;
+}
+
+.bigger-box h4{
+	position: absolute;
+	margin-top: -650px;
+	margin-left: -20px;
+	background-color: white;
+	text-indent: 20px;
+	padding: 5px 10px 5px 0;
+	border-top-right-radius: 40px;
+	border-bottom-right-radius: 40px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+#about .bigger-box .price-info p{
+	width: 55%;
+}
+
+#about .bigger-box .price-info a{
+	width: 45%;
+}
+
+#about .big-box .price-info p{
+	width: 70%;
+}
+
+#about .big-box .price-info a{
+	width: 30%;
+}
+
+
+@media screen and (max-width: 640px){
+	.ab1, .ab23, .ab4a {
+	display: none;
+	}
+
+	.ab4b {order: -1;}
+}
+
+@media screen and (min-width: 640px) and (max-width: 1200px) {
+	.box {
+		margin-right: 20px;
+	}
+
+	.ab23, .ab4b {
+		display: none;
+	}
+
+}
+
+@media screen and (min-width: 1200px){
+	.ab2, .ab3, .ab4b {
+		display: none;
+	}
+
+	.ab23 {
+		display: 
+	}
+}
+
+/* FOOD */
+#food {
+	background-color: rgb(241, 241, 241);
+	padding: 30px;
+}
+
+.food-content{
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.round-box {
+	margin-bottom: 20px;
+	width: 300px;
+	padding-bottom: 12px;
+	text-align: center;
+}
+
+.round-box img{
+	border-radius: 50%;
+}
+
+#food .small-box img{
+	border-radius: 50%;
+}
+
+.f2a {
+	margin-right: 10px;
+}
+
+.p2b {
+	margin-left: 10px;
+}
+
+@media screen and (max-width: 640px){
+	.f1, .f2, .f3, .f4a, .f6a, .f5 {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 640px) and (max-width: 1200px) {
+	.box, .round-box, .big-box {
+		margin-right: 20px;
+	}
+
+	.f4, .f23, .f6 {
+		display: none;
+	}
+
+	.f1{order: 1;}
+	.f2{order: 2;}
+	.f4a{order: 3;}
+	.f3{order: 5;}
+	.f5{order: 4;}
+	.f6a{order: 6;}
+}
+
+@media screen and (min-width: 1200px){
+	.box, .round-box, .big-box {
+		margin-right: 20px;
+	}
+
+	.f4, .f23, .f6 {
+		display: none;
+	}
+
+	.f1{order: 1;}
+	.f2{order: 2;}
+	.f4a{order: 4;}
+	.f3{order: 5;}
+	.f5{order: 3;}
+	.f6a{order: 6;}
+}
+
+/* FOOTER1 */
+#footer1 {
+	padding: 30px;
+}
+
+.footer1-container{
+	width: 300px;
+	height: 100%;
+	display: block;
+	margin: auto;
+}
+
+#footer1 ul{
+	list-style-type: none;
+	padding-left: 0;
+	opacity: .7;
+	padding-bottom: 10px;
+}
+
+#footer1 li{
+	padding-bottom: 5px;
+	font-size: 16px;
+}
+
+.icon{
+	width: 35px;
+	height: 35px;
+	margin-right: 10px;
+}
+
+#footer1 h4{
+	text-transform: uppercase;
+}
+
+@media screen and (min-width: 640px){
+	.footer1-container{
+		display: flex;
+		flex-flow: row;
+		flex-wrap: nowrap;
+		width: 100%;
+		height: 100%;
+	}
+
+	.footer1-row{
+		width: 25%;
+	}
+
+	#footer1 h4{
+		font-size: 12px;
+	}
+
+	.icon {
+		margin-right: 3px;
+		margin-bottom: 3px;
+	}
+}
+
+/* FOOTER 2 */
+@media screen and (min-width: 640px){
+	.footer2-container{
+		padding: 0 30px;
+		width: 100%;
+		height: 100%;
+		justify-content: space-between;
+		flex-wrap: nowrap;
+		flex-grow: 1 1 auto;
+		padding-bottom: 30px;
+	}
+
+	.footer2-row {
+		width: 23%;
+	}
+
+	.footer2-row img{
+		width: 100%;
+	}
+
+	#footer2 h4{
+		position: absolute;
+		margin-top: -235px;
+		padding-left: 20px;
+		color: white;
+		font-size: 20px;
+		font-weight: 300;
+	}
+}
+
+@media screen and (max-width: 640px){
+	#footer2{
+		display: none;
+	}
+}
+
+/* FOOTER 3*/
+#footer3{
+	padding: 50px 0; 
+	background-color: rgb(241, 241, 241);
+	width: 100%;
+}
+
+.footer3-container{
+	margin: auto;
+	text-align: center;
+	font-weight: 300;
+}
+
+#footer3 h2{
+	margin-bottom: 20px;
+	font-weight: 300;
+	opacity: .8;
+}
